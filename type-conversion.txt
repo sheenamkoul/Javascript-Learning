@@ -1,0 +1,45 @@
+1. What will be the result of the following code?
+console.log('5' + 2);
+ 
+=>output: 52
+
+2. How can you convert a string "123" to a number in JavaScript?
+ 
+var a =number("123");
+console.log(typeof(a));
+
+3.What are the falsy values in JavaScript that, when converted to a Boolean, become false?
+  
+ 0,null,'',"",undefined, NAN
+
+4. What is the difference between parseInt('12.34') and parseFloat('12.34')?
+   
+ -  parseInt will convert the float value in whole integer removing the decimal part and will convert the string in a number.
+ -  parseFloat will keep the decimal value as is and will convert string to a number.
+
+5. Converting Numbers to Strings:
+  How would you convert a number 42 to a string in JavaScript?
+
+let a =42;
+let str = String(42)
+console.log(str);
+
+6. What is the difference between == and === in JavaScript?
+
+== only matches the values and === matches the types as well
+
+7. How does JavaScript handle the conversion of an array to a string?
+
+ let num = [1,2,3];
+let str = String(num) / num.toString();
+console.log(str);
+
+
+
+
+actual use of valuof() ==> need to understand in depth 
+
+
+
+
+
