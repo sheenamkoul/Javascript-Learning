@@ -1,0 +1,42 @@
+1. Function declaration :How do you declare a function named greet that takes one parameter, name, and logs "Hello, name!" to the console?
+
+function greet(name)
+{
+    console.log("hello " +name);
+}
+greet('sheen');
+
+
+2. What is a function expression, and how do you create one to add two numbers?
+
+let add = function(a,b){
+    let c = a+b;
+ return c;
+}
+const obj = add(2,3)
+
+console.log(obj);
+
+3. Arrow functions: What is the syntax for an arrow function that multiplies two numbers? Provide an example.
+
+let arrfnc ;
+arrfnc = (a,b) => a*b;
+
+const result = arrfnc(2,3);
+console.log(result);
+
+4. What is an IIFE, and how do you write one to log "Hello, World!" to the console?
+
+(function(){
+    
+    console.log("hello world");
+})();
+
+5. How do you define a function with a parameter that has a default value? Provide an example.
+
+function greet(name = 'sheen'){
+    
+    console.log(name)
+}
+greet();
+
