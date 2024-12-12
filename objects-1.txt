@@ -1,0 +1,91 @@
+1. How do you create an object named person with properties name and age?
+
+let person = {name , age};
+
+2.  Given the object let car = { make: 'Toyota', model: 'Camry', year: 2020 };, how do you access the model property using both dot notation and bracket notation?
+
+let car ={ make: 'Toyota', model: 'Camry', year: 2020 };
+let model =car.model;
+let model2 = car['model'];
+
+console.log(model);
+console.log(model2);
+
+3. Adding Properties:
+
+How do you add a new property color with the value 'red' to the car object?
+
+let car ={ make: 'Toyota', model: 'Camry', year: 2020 };
+let model =car.model;
+let model2 = car['model'];
+let color;
+
+car.color='red';
+
+console.log(model);
+console.log(model2);
+console.log(car);
+
+4. Deleting Properties:
+
+-- How do you delete the year property from the car object?
+
+let car ={ make: 'Toyota', model: 'Camry', year: 2020 };
+let model =car.model;
+let model2 = car['model'];
+let color;
+
+car.color='red';
+
+console.log(model);
+console.log(model2);
+delete car.year;
+console.log(car);
+
+5. Object Methods:
+
+How do you add a method greet to the person object that logs "Hello, my name is [name]" 
+to the console?
+
+let person = {'name':'sheenam', 'age':20 ,
+    greet(){
+    console.log(`my name is ${person.name}`);
+}};
+person.greet();
+
+6. Nested Objects:
+
+How do you create an object user with a nested address object, and how do you access the city property of address?
+
+let person = {'name':'sheenam', 'age':20 ,
+    address:
+        {
+            'city':'pune',
+        }
+};
+console.log(person.address.city);
+
+7. Object Destructuring:
+
+Given the object let user = { name: 'Alice', age: 25 };, how do you use destructuring to extract the name and age properties into variables?
+
+let user = { name: 'Alice', age: 25 };
+let {name , age}= user; // destructuring => need to understand how this is useful in programming
+
+console.log(name);
+
+8. Iterating Over Properties: How do you use a for...in loop to iterate over and log all the properties of the car object?
+
+let car = { 
+    name: 'maruti', 
+    make: 2005,
+    model:'highend',
+    
+};
+
+for(let cars in car)
+{
+    console.log(`${cars} ${car[cars]}`);
+}
+
+9. 
