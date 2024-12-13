@@ -88,4 +88,18 @@ for(let cars in car)
     console.log(`${cars} ${car[cars]}`);
 }
 
-9. 
+9. Object.keys(), Object.values(), Object.entries():
+
+How do you use Object.keys(), Object.values(), and Object.entries() to get an array of keys, values, and key-value pairs from the car object?
+
+let car = {
+    name:'maruti',
+    make:2005,
+    model:'hybrid',
+}
+let obj = Object.entries(car);
+let obj2 = Object.values(car);
+let obj3 = Object.keys(car);
+console.log(obj1)
+console.log(obj2)
+console.log(obj3)
