@@ -1,0 +1,45 @@
+1.What is shallow copy? How do you create a shallow copy of an object using Object.assign()? Provide an example.
+
+-- Shallow copy: Shallow copy of an object only copies the top priority objects but copies the references of the nested objects thus changing the original nested object.
+console.log("Try programiz.pro");
+const originalobj = {a:2,b:{c:3},d:5};
+// console.log(originalobj.b);
+
+const shallowcopy = Object.assign({},originalobj);
+const copiedobj = {...originalobj};
+shallowcopy.a = 99;
+shallowcopy.b.c = 78;
+copiedobj.a=6;
+copiedobj.b.c=7;
+
+
+
+
+console.log(originalobj.a);
+console.log(originalobj.b.c);
+console.log(shallowcopy.a);
+console.log(shallowcopy.b.c);
+console.log(copiedobj.a);
+console.log(copiedobj.b.c);
+
+2. what is deep copy ? JSON Methods for Deep Copy:
+Deep copy created an object that is completely independent of the original copy. It copies the nested object as well.
+
+const originalobj = {a:2,b:{c:3},d:5};
+// console.log(originalobj.b);
+
+const deepcopy = JSON.parse(JSON.stringify(originalobj))
+//const copiedobj = {...originalobj};
+deepcopy.a = 99;
+deepcopy.b.c = 78;
+// copiedobj.a=6;
+// copiedobj.b.c=7;
+
+
+
+
+console.log(originalobj.a);
+console.log(originalobj.b.c);
+console.log(deepcopy.a);
+console.log(deepcopy.b.c);
+
