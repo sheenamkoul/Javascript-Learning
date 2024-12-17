@@ -1,0 +1,54 @@
+1. How do you access the first and last character of a string? Provide an example.
+
+let str = "helloworld";
+let firstchar = str[0];
+let lastchar =str[str.length-1];
+console.log(lastchar);
+
+2. String Concatenation:
+
+What methods can you use to concatenate two strings? Provide examples using both the + operator and the concat() method.
+
+let str1 = "hello";
+let str2 = "world"
+let concat = str1+' '+str2;
+let concat2 = str1+' '.concat(str2);
+console.log(concat);
+console.log(concat2);
+
+3. String Slicing: How do you extract a part of a string using the slice() method? Provide an example. 
+str1 = "helloworld";
+
+let sliced = str1.slice(4,-1)
+
+console.log(sliced);
+
+4. What is the difference between substring() and slice()? Provide examples to illustrate.
+
+in slice negative values are considered to start from right to left.
+in substring negative value are considered as 0.
+let str1 = "helloworld";
+
+let substring = str1.substring(-1,4)
+
+console.log(substring);
+
+5. How do you split a string into an array of substrings? Provide an example using the split() method.
+
+=>let str1 = "h,e,llo world ";
+
+let splitstr = str1.split(",")
+
+console.log(splitstr);
+
+6. How do you replace a part of a string with another string? Provide an example using the replace() method.
+
+=> let str1 = "h,e,llo,world ";
+
+let replace = str1.replace('llo' , 'hel')
+
+console.log(replace);
+
+
+
+	
